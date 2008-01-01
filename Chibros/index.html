@@ -1,0 +1,74 @@
+<doctype html>
+<html>
+    <head>
+         <title>Currency calculator</title>
+         <meta char-set='utf-8'>
+         <meta name="viewport" content="width=device-width initial-scale=1.0">
+         <link rel="stylesheet" href="css/index.css">    
+    </head>
+    
+    <body>
+    
+    <div id="container">
+        <h2 id='sh2'>CURRENCY CALCULATOR</h2>
+        <hr>
+           <div class="content">
+                <select id="currency_pair">
+                    <option value="n2d">Naira => Dollar</option>
+                    <option value="d2n">Dollar => Naira</option>
+                </select>
+           </div>
+           <div class="content"id="firstInput">
+               <label for="naira">Naira</label>
+               <input type="number" id="naira" class="content">
+           </div>
+            <div class="content"id="secondInput">     
+               <label for="dollar">Dollar</label>
+               <input type="number" id="dollar" class="content">
+               <button id="convert">CONVERT</button>
+           </div>
+           <div class="btncontent">
+               <button id="btnAdvanced">ADVANCED CALCULATOR</button>
+                <button id="btnClear">CLEAR</button>
+           </div>
+           
+    
+    </div>
+    <div id="adv">
+         <h2>ADVANCED CURRENCY CALCULATOR</h2>
+         
+         <hr>
+         
+        <div class="Scontainer">
+           <div class="Scontent"id="firsti">
+             <input type="number"id="aFi">
+           </div>
+          <div class="Scontent">
+             <select id="aCurrency_pair1">
+               <option value="naira">Naira</option>
+               <option value="dollar">Dollar</option>
+               <option value="euro">Euro</option>
+             </select>
+          </div>
+     </div>
+        <div class="Scontainer">
+            <div class="Scontent"id="secondi">
+                <input type="number"id="aSi">
+            </div>
+          <div class="Scontent">
+              <select id="aCurrency_pair2">
+                  <option value="naira">Naira</option>
+                  <option value="dollar">Dollar</option>
+                  <option value="euro">Euro</option>
+              </select>
+          </div>
+     </div>
+          <div class="acontainer">
+             <button class="Scontent"id="btns">SIMPLE CAL.</button>         
+              <button class="Scontent"id="btnAclear">CLEAR</button>
+         </div>
+     <script type="text/javascript" src="js/index.js"></script>
+    </body>
+    
+
+</html>

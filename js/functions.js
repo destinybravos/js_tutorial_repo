@@ -150,59 +150,12 @@ document.getElementById('btnAdvanced').addEventListener('click', function(){
 });
 
 // Decllaring Variables that will hold all input values
-var aFi = document.getElementById('fInputA');
-var aSi = document.getElementById('sInputA');
-var aFS = document.getElementById('fselect');
-var aSS = document.getElementById('sselect');
-
-document.getElementById('fInputA').addEventListener('keyup', function () {
-    let Fvalue = aFS.value;
-    let Svalue = aSS.value;
-    let Amount = this.value;
-    aSi.value = A_Convert(Amount, Fvalue, Svalue);
-});
-
-document.getElementById('fselect').addEventListener('change', function () {
-    let Fvalue = aFS.value;
-    let Svalue = aSS.value;
-    let Amount = aFi.value;
-    aSi.value = A_Convert(Amount, Fvalue, Svalue);
-});
-
-document.getElementById('sInputA').addEventListener('keyup', function () {
-    let Fvalue = aFS.value;
-    let Svalue = aSS.value;
-    let Amount = this.value;
-    aFi.value = A_Convert(Amount, Svalue, Fvalue);
-});
-
-document.getElementById('sselect').addEventListener('change', function () {
-    let Fvalue = aFS.value;
-    let Svalue = aSS.value;
-    let Amount = aSi.value;
-    aFi.value = A_Convert(Amount, Svalue, Fvalue);
-});
+ var firstI = document.getElementById('aFi');
+ var secondI = document.getElementById('aSi');
+ var firstSelect = document.getElementById('aCurrency_pair1');
+ var secondSelect = document.getElementById('aCurrency_pair2');
+ document.getElementById('')
 
 
-// Advanced Converting function
-function A_Convert(theAmount, value1, value2) {
-    let covertedAmount;
 
-    if(value1 === value2){
-        covertedAmount = theAmount;
-    }else if(value1 === 'nValue' && value2 === 'dValue'){
-        covertedAmount = convert2dollar(theAmount);
-    }else if(value1 === 'dValue' && value2 === 'nValue'){
-        covertedAmount = convert2Naira(theAmount);
-    }else if(value1 === 'nValue' && value2 === 'eValue'){
-        covertedAmount = convertNaira2Euro(theAmount);
-    }else if(value1 === 'eValue' && value2 === 'nValue'){
-        covertedAmount = convertEuro2Naira(theAmount);
-    }else if(value1 === 'dValue' && value2 === 'eValue'){
-        covertedAmount = convertDollar2Euro(theAmount);
-    }else if(value1 === 'eValue' && value2 === 'dValue'){
-        covertedAmount = convertEuro2Dollar(theAmount);
-    }
-
-    return covertedAmount;
-}
+ 

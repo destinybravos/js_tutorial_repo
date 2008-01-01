@@ -1,0 +1,99 @@
+*{
+    margin:0;
+    padding:0;
+}
+#grouper{
+    background-image:url("../images/wpblack1.jpg");
+    max-width: 100%;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+#grouper section:nth-child(1){
+    width:1000px;
+    margin:auto;
+   //background:red;
+   }
+#grouper section:nth-child(1) aside{
+ margin-bottom:25px;
+}
+#grouper section:nth-child(1) aside:nth-child(1){
+
+    font-size:1rem;
+    line-height: 1.5;
+}
+
+#grouper section:nth-child(1) aside:nth-child(2){
+    background:url("../images/officebg1.jpg");
+    background-repeat:round;
+    height: 160px;
+    width:350px;
+    padding:30px;
+}
+#frst_sec_2asd_menu-bar{
+    display:flex;
+   background:rgba(171, 171, 226, 0.945);
+   opacity: 0.7;
+   padding:10px;    
+}
+#frst_sec_2asd_menu-bar section:first-child{
+   flex:1;
+}
+#frst_sec_2asd_menu-bar section:last-child{
+   flex:2;
+}
+#frst_sec_2asd_menu-bar section:last-child ul{
+   display: inline-flex;
+   list-style: none;
+   margin-right:5px;
+}
+#frst_sec_2asd_menu-bar section:last-child ul li{
+     margin-right:5px;
+}
+#frst_sec_2asd_menu-bar section:last-child ul li a{
+    margin-right:5px;
+    font-size:15px;
+    text-decoration:none;
+    color:white;
+}
+#grouper section:nth-child(1) aside:nth-child(3){
+    background:url("../images/wbg2.jpg");background-size:cover;
+    background-repeat:round;
+    height: 160px;
+    width:385px;  
+   
+}
+#frst_sec_3asd_menu-bar{
+    display:flex;
+   background:rgb(228, 220, 220);
+   opacity: 0.7;
+   padding:10px;    
+}
+#frst_sec_3asd_menu-bar section{
+    padding:10px 0px;
+}
+#frst_sec_3asd_menu-bar section:first-child{
+   flex:1;
+}
+#frst_sec_3asd_menu-bar section:last-child{
+   flex:2;
+}
+#frst_sec_3asd_menu-bar section:last-child ul{
+   display: inline-flex;
+   list-style: none;
+   margin-right:5px;
+}
+#frst_sec_3asd_menu-bar section:last-child ul li{
+     margin-right:5px;
+}
+#frst_sec_3asd_menu-bar section:last-child ul li a{
+    margin-right:5px;
+    font-size:15px;
+    text-decoration:none;
+    color:black;
+}
+#grouper section:nth-child(1) aside:nth-child(4){
+    background:url("../images/officebg3.jpg");
+    background-repeat:no-repeat;
+    height: 160px;
+    width:350px; 
+}

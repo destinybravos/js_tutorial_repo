@@ -1,99 +1,210 @@
 *{
-    margin:0;
     padding:0;
+    margin:0;
 }
-#grouper{
-    background-image:url("../images/wpblack1.jpg");
-    max-width: 100%;
-    background-size:cover;
-    background-repeat:no-repeat;
+body{
+    background:url("../images/wpblack1.jpg");
 }
-#grouper section:nth-child(1){
-    width:1000px;
-    margin:auto;
-   //background:red;
+#container{
+    margin: auto;
+    
+}
+#content1{
+   width:41%;
+   margin:20px 0px;
+}
+#content2{
+  background:url("../images/officebg1.jpg");
+  width:41%;
+  height: 200px;
+  padding-top:30px;
+  margin:20px 0px;
+}
+#contnt2-menu-bar{
+    background:lightsteelblue;
+     display:flex;
+     width: 80%;
+     margin:auto;
+     padding:10px;
+     opacity: 0.85;
+}
+#contnt2-menu-bar section:first-child{
+   color:white;
+   flex: 1;
+}
+#contnt2-menu-bar section:last-child{
+    flex: 2;
+ }
+ #contnt2-menu-bar section:last-child ul{
+     list-style: none;
+ }
+ #contnt2-menu-bar section:last-child ul li{
+ display:inline-block;
+ margin:0px 5px;
+ }
+ #contnt2-menu-bar section:last-child ul li a{
+     text-decoration: none;
+     color:white;
+     margin: 5px;
+ }
+ #content3{
+    background:url("../images/officebg3.jpg");
+    width:41%;
+    height: 200px;
+    margin-bottom:20px;
+  }
+  #contnt3-menu-bar{
+      background:lightsteelblue;
+       display:flex; 
+       padding:10px;
+       opacity: 0.85;
+  }
+  #cntn3-mb-container{
+  width: 80%;
+  margin:auto;
+  display:inline-flex;
+  }
+  #contnt3-menu-bar section:first-child{
+     color:white;
+     flex: 1;
+  }
+  #contnt3-menu-bar section:last-child{
+      flex: 2;
    }
-#grouper section:nth-child(1) aside{
- margin-bottom:25px;
+   #contnt3-menu-bar section:last-child ul{
+       list-style: none;
+   }
+   #contnt3-menu-bar section:last-child ul li{
+   display:inline-block;
+   }
+   #contnt3-menu-bar section:last-child ul li a{
+       text-decoration: none;
+       color:white;
+       margin: 5px;
+   }
+   #content3 footer{
+    margin-top:8rem;
+    text-align:center;
+   }
+   #content3 footer i{
+    color:white;
+    margin-right:10px;
 }
-#grouper section:nth-child(1) aside:nth-child(1){
-
-    font-size:1rem;
-    line-height: 1.5;
-}
-
-#grouper section:nth-child(1) aside:nth-child(2){
-    background:url("../images/officebg1.jpg");
-    background-repeat:round;
-    height: 160px;
-    width:350px;
-    padding:30px;
-}
-#frst_sec_2asd_menu-bar{
-    display:flex;
-   background:rgba(171, 171, 226, 0.945);
-   opacity: 0.7;
-   padding:10px;    
-}
-#frst_sec_2asd_menu-bar section:first-child{
-   flex:1;
-}
-#frst_sec_2asd_menu-bar section:last-child{
-   flex:2;
-}
-#frst_sec_2asd_menu-bar section:last-child ul{
-   display: inline-flex;
-   list-style: none;
-   margin-right:5px;
-}
-#frst_sec_2asd_menu-bar section:last-child ul li{
-     margin-right:5px;
-}
-#frst_sec_2asd_menu-bar section:last-child ul li a{
-    margin-right:5px;
-    font-size:15px;
+#content3 footer i a{
     text-decoration:none;
     color:white;
+    margin-left:10px;
 }
-#grouper section:nth-child(1) aside:nth-child(3){
-    background:url("../images/wbg2.jpg");background-size:cover;
-    background-repeat:round;
-    height: 160px;
-    width:385px;  
-   
+#content3 footer hr{
+    width:70%;
+    margin:auto;
 }
-#frst_sec_3asd_menu-bar{
-    display:flex;
-   background:rgb(228, 220, 220);
-   opacity: 0.7;
-   padding:10px;    
+#content4{
+    background:url('../images/officebg4.jpg');
+    width:41%;
+    height: 200px;
 }
-#frst_sec_3asd_menu-bar section{
-    padding:10px 0px;
+#container2{
+    flex:1;
 }
-#frst_sec_3asd_menu-bar section:first-child{
-   flex:1;
+#cntn4-mb-container{
+    border:thin solid black;
+    width:20%;
+    margin-top:10px;
+    margin-left:35%;
+    padding:10px;
+    display:inline-block;
+
 }
-#frst_sec_3asd_menu-bar section:last-child{
-   flex:2;
+#content4 footer{
+    margin-top:7rem;
+    text-align:center;
+   }
+   #content4 footer i{
+    color:white;
+    margin-right:10px;
 }
-#frst_sec_3asd_menu-bar section:last-child ul{
-   display: inline-flex;
-   list-style: none;
-   margin-right:5px;
-}
-#frst_sec_3asd_menu-bar section:last-child ul li{
-     margin-right:5px;
-}
-#frst_sec_3asd_menu-bar section:last-child ul li a{
-    margin-right:5px;
-    font-size:15px;
+#content4 footer i a{
     text-decoration:none;
-    color:black;
+    color:white;
+    margin-left:10px;
 }
-#grouper section:nth-child(1) aside:nth-child(4){
-    background:url("../images/officebg3.jpg");
-    background-repeat:no-repeat;
-    height: 160px;
-    width:350px; 
+#content4 footer hr{
+    width:70%;
+    margin:auto;
 }
+#c2-content1{
+    background:url("../images/fancybg2.jpg");
+    width:41%;
+    height: 200px;
+    margin-top:20px;
+}
+#ctn1-menu-bar{
+    display:flex;
+     background:lightsteelblue;
+     padding:10px;
+}
+
+#ctn1-menu-bar section:nth-child(1){
+   flex:1;
+   font-size:10px;
+}
+#ctn1-menu-bar section:nth-child(1) ul{
+    list-style:none;
+    display:inline-flex;
+}
+#ctn1-menu-bar section:nth-child(1) ul li{
+    margin-right:5px;
+}
+#ctn1-menu-bar section:nth-child(1) ul li a{
+    text-decoration:none ;
+    margin-right:5px;
+}
+#ctn1-menu-bar section:nth-child(2){
+flex:1;
+margin-top:10px;
+}
+#ctn1-menu-bar section:nth-child(2) p{
+    border: thin solid black;
+    text-align:center;
+    padding:5px;
+    }
+#ctn1-menu-bar section:nth-child(3){
+    display:inline-flex;
+    flex:2;  
+}
+#ctn1-menu-bar section:nth-child(3) p{
+    margin:0px 10px;
+    font-size:13px;
+}
+#ctn1-menu-bar section:nth-child(3) i{
+    margin-right:8px;
+}
+#c2-content2{
+    background:white;
+    width:41%;
+    height: 200px;
+    padding-top:10px;
+}
+#c2-menu-bar{
+    background:black;
+}
+#c2-menu-bar section:nth-child(1){
+    width:70%;
+    margin:auto;   
+}
+#c2-menu-bar section:nth-child(1) ul{
+    list-style: none;
+    display:inline-flex;
+}
+#c2-menu-bar section:nth-child(1) ul li{
+    padding:10px;
+    color:white;
+}
+#c2-menu-bar section:nth-child(1) ul li a{
+   text-decoration:none;
+   color:white;
+   margin-right:10px;
+}
+
+

@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    margin: 20vh auto;
+    width: 400px;
+    max-width: 100%;
+    min-height: 300px;
+    background-color: aliceblue;
+    box-shadow: 0 0 2px rgba(65, 56, 56, 0.308);
+}
+.container h2{
+    text-align: center;
+    padding: 10px 0 3px;
+}
+
+#advConverter{
+    display: none;
+}
+
+.grouper{
+    padding: 10px 20px;
+}
+.grouper select, .grouper input{
+    display: block;
+    width: 80%;
+    height: 30px;
+    border: none;
+    box-shadow: 0 0  1px rgba(0, 0, 0, 0.5);
+    padding: 3px 15px;
+}
+.grouper button{
+    padding: 3px 15px;
+}

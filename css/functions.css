@@ -33,3 +33,12 @@
 .grouper button{
     padding: 3px 15px;
 }
+
+/* ADVANCE INTERFACE */
+.col{
+    display: flex;
+}
+.col div{
+    flex: 1;
+    vertical-align: bottom;
+}

@@ -23,6 +23,57 @@ function greetPersonAgain(person){
 // console.log(greetPersonAgain('LisaIxora'));
 
 // ||||||||||| CURENCY CONVERTER
+
+document.getElementById('convertTask').addEventListener('change', function () {
+    // let task = document.getElementById('convertTask').value;
+    let task = this.value;  //in place of the statement above
+    if (task === 'n2d') {
+        // Get the inner elements of the first and second div
+        let lbl1 = document.getElementById('first').children[0];
+        let lbl2 = document.getElementById('second').children[0];
+        let inp1 = document.getElementById('first').children[1];
+        let inp2 = document.getElementById('second').children[1];
+        // Re-format the interface with new information
+        lbl1.innerText = 'Naira Value';
+        lbl2.innerText = 'Dollar Value';
+        inp1.setAttribute('id', 'nInput');
+        inp2.setAttribute('id', 'dInput');
+    }else if(task === 'd2n'){
+        // Get the inner elements of the first and second div
+        let lbl1 = document.getElementById('first').children[0];
+        let lbl2 = document.getElementById('second').children[0];
+        let inp1 = document.getElementById('first').children[1];
+        let inp2 = document.getElementById('second').children[1];
+        // Re-format the interface with new information
+        lbl1.innerText = 'Dollar Value';
+        lbl2.innerText = 'Naira Value';
+        inp1.setAttribute('id', 'dInput');
+        inp2.setAttribute('id', 'nInput');
+    }else if(task === 'e2n'){
+        // Get the inner elements of the first and second div
+        let lbl1 = document.getElementById('first').children[0];
+        let lbl2 = document.getElementById('second').children[0];
+        let inp1 = document.getElementById('first').children[1];
+        let inp2 = document.getElementById('second').children[1];
+        // Re-format the interface with new information
+        lbl1.innerText = 'Euro Value';
+        lbl2.innerText = 'Naira Value';
+        inp1.setAttribute('id', 'eInput');
+        inp2.setAttribute('id', 'nInput');
+    }else if(task === 'n2e'){
+        // Get the inner elements of the first and second div
+        let lbl1 = document.getElementById('first').children[0];
+        let lbl2 = document.getElementById('second').children[0];
+        let inp1 = document.getElementById('first').children[1];
+        let inp2 = document.getElementById('second').children[1];
+        // Re-format the interface with new information
+        lbl1.innerText = 'Naira Value';
+        lbl2.innerText = 'Euro Value';
+        inp1.setAttribute('id', 'nInput');
+        inp2.setAttribute('id', 'eInput');
+    }
+});
+
 const btnConvert = document.getElementById('btnConvert');
 
 btnConvert.addEventListener('click', function(){
@@ -33,7 +84,7 @@ btnConvert.addEventListener('click', function(){
 function convert() {
     let dol;
     let nar;
-    var task = document.getElementById('convertTask').value;
+    let task = document.getElementById('convertTask').value;
     if(task === 'n2d'){
         // Naira to Dollar Conversion
         nar = document.getElementById('nInput').value;
@@ -66,3 +117,32 @@ function convert2Naira(dollar) {
     naira = dollar * 380;
     return naira;
 }
+
+
+// ||||||||||||| ADVANCED CALCULATOR
+document.getElementById('btnSimple').addEventListener('click', function(){
+    document.getElementById('advConverter').style.display = 'none';
+    document.getElementById('simpleConverter').style.display = 'block';
+});
+document.getElementById('btnAdvanced').addEventListener('click', function(){
+    document.getElementById('advConverter').style.display = 'block';
+    document.getElementById('simpleConverter').style.display = 'none';
+});
+
+// Decllaring Variables that will hold all input values
+var aFi = document.getElementById('fInputA');
+var aSi = document.getElementById('sInputA');
+var aFS = document.getElementById('fselect');
+var aSS = document.getElementById('sselect');
+
+document.getElementById('fInputA').addEventListener('keyup', function () {
+    let aFSvalue = aFS.value;
+    let aSSvalue = aSS.value;
+    let theAmount = this.value;
+
+    if(aFSvalue === aSSvalue){
+        aSi.value = theAmount;
+    }else if(aFSvalue === 'nValue' && aSSvalue === 'dValue'){
+        aSi.value = convert2dollar(theAmount);
+    }
+});

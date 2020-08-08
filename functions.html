@@ -17,15 +17,17 @@
             <select id="convertTask">
                 <option value="n2d">Naira => Dollar</option>
                 <option value="d2n">Dollar => Naira</option>
+                <option value="e2n">Euro => Naira</option>
+                <option value="n2e">Naira => Euro</option>
             </select>
         </div>
 
-        <div class="grouper">
+        <div class="grouper" id="first">
             <label for="nInput">Naira Value</label>
             <input type="number" id="nInput" class="txtBox">
         </div>
 
-        <div class="grouper">
+        <div class="grouper" id="second">
             <label for="dInput">Dollar Value</label>
             <input type="number" id="dInput" class="txtBox">
         </div>
@@ -39,7 +41,30 @@
     </div>
 
     <div id="advConverter">
-
+        <div class="col">
+            <div class="grouper" id="aFirst">
+                <input type="number" id="fInputA" class="txtBox">
+            </div>
+            <div class="grouper">
+                <select id="fselect">
+                    <option value="nValue" selected>Naira</option>
+                    <option value="dValue">Dollar</option>
+                    <option value="eValue">Euro</option>
+                </select>
+            </div>
+        </div>
+        <div class="col">
+            <div class="grouper" id="aFirst">
+                <input type="number" id="sInputA" class="txtBox">
+            </div>
+            <div class="grouper">
+                <select id="sselect">
+                    <option value="nValue">Naira</option>
+                    <option value="dValue" selected>Dollar</option>
+                    <option value="eValue">Euro</option>
+                </select>
+            </div>
+        </div>
     </div>
 
     
@@ -48,7 +73,7 @@
         <button id="btnSimple">
             Simple CONVERT
         </button>
-        <button id="btnSimple">
+        <button id="btnAdvanced">
             Advanced CONVERT
         </button>
     </div>

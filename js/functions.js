@@ -17,10 +17,10 @@ function greetPersonAgain(person){
     return greeting;
 }
 // calling functions
-// greet();
-// greet_person("LisaIxora");
-// console.log(greetAgain() + 'LisaIxora');
-// console.log(greetPersonAgain('LisaIxora'));
+greet();
+greet_person("LisaIxora");
+console.log(greetAgain() + 'LisaIxora');
+console.log(greetPersonAgain('LisaIxora'));
 
 // ||||||||||| CURENCY CONVERTER
 

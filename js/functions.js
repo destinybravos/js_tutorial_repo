@@ -176,7 +176,7 @@ document.getElementById('sInputA').addEventListener('keyup', function () {
     aFi.value = A_Convert(Amount, Svalue, Fvalue);
 });
 
-document.getElementById('sselect').addEventListener('change', function () {
+document.getElementById('sselect').addEventListener('change', () => {
     let Fvalue = aFS.value;
     let Svalue = aSS.value;
     let Amount = aSi.value;
@@ -206,3 +206,7 @@ function A_Convert(theAmount, value1, value2) {
 
     return covertedAmount;
 }
+
+document.readyState( ()=> {
+    alert('Alert Me')
+})

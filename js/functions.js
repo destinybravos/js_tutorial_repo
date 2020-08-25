@@ -92,7 +92,7 @@ function convert() {
             alert('The Naira Value is empty! Please enter naira value.');
         }else{
             dol = convert2dollar(nar);
-            document.getElementById('dInput').value = dol;
+            document.getElementById('dInput').value = dol;//print the dollar to the dollar input.
         }
     }else if(task === 'd2n'){
         // Dollar to Naira Conversion

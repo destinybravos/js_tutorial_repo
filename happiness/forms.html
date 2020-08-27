@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing Forms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: rgba(0, 0, 255, 0.178);">
+
+    <form action="processer.php" method="get" enctype="text/plain" style="padding: 2px; border: 1px solid green;">
+        <div style="text-align: center;">passport <img src="pic2.jpg" alt="pic2.jpg" style="width: 60px; height: 80px; border-radius: 25px;"></div>
+        <label for="uname" >Username</label>
+        <input type="text" name="uname" required style="width: 220px; display: block; margin-bottom: 20px; height: 30px;">
+        <label for="email">Email</label>
+        <input type="email" name="email" required="required"  style="width: 220px; display: block; height: 30px; margin-bottom: 20px;"
+         maxlength="10"> 
+         <label for="pass">password</label>
+        <input type="password" name="pass" id="" required  style="width: 220px; display: block; margin-bottom: 20px;  height: 30px"> <br>
+
+
+        <input type="checkbox" name="remember" value="yes" id="" checked="checked">
+         <br>
+
+        <textarea name="memo" id=""></textarea>
+        <button type="submit" style="margin-bottom: 20px;">
+            Submit 
+        </button>
+    </form>
+</body>
+</html>

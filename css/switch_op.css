@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#light_container{
+    margin: 7vh auto 5vh;
+    max-width: 360px;
+    text-align: center;
+}
+#light_container img{
+    max-width: 100px;
+}
+
+/* ==== Advanced Switching ==== */
+#paging_container{
+    max-width: 800px;
+    min-height: 300px;
+    background-color: tomato;
+    margin: auto;
+    display: flex;
+}
+#menu{
+    background-color: teal;
+    min-height: 10px;
+    flex: 1;
+}
+#screen{
+    background-color: thistle;
+    min-height: 10px;
+    flex: 4;
+    padding: 15px;
+}
+/* Side Menu */
+#menu ul li{
+    list-style-type: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    color: black;
+    font-weight: bold;
+}
+#menu ul li:hover{
+    background-color: rgba(100, 142, 189, 0.3);
+}
+.active{
+    background-color: thistle !important;
+    color: rgb(82, 68, 68) !important;
+}

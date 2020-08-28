@@ -1,6 +1,8 @@
 var person = '';
 var people = [];
 var btnAdd = document.getElementById('btnAddPerson');
+var btnClear = document.getElementById('btnclearPerson');
+
 
 btnAdd.addEventListener('click', function () {
     // person = document.getElementById('person').value; //First Method of getting the value
@@ -10,9 +12,15 @@ btnAdd.addEventListener('click', function () {
         people.push(person); //Added the new to the people array
         displayName(people);  //Called the function to display the names in the UI
         clearInput();
+
     } else {
         alert("Person's name must be greater pr equal to 6 characters!");
-    }
+    } 
+
+})
+
+btnClear.addEventListener('click', function(){
+    people=document.getElementById('people').innerHTML='';
 
 })
 
@@ -32,3 +40,7 @@ function displayName(people) {
     console.log(list);
     document.getElementById('people').innerHTML = list;
 }
+
+
+
+

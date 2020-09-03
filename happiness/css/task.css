@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: greenyellow;
+}
+H3{
+    text-align: center;
+}
+hr{
+    margin-bottom: 10px;
+}
+
+form{
+    background-color: rgba(3, 119, 3, 0.966);
+    max-width: 300px;
+    min-height: 300px;
+    margin: 20vh auto;
+    padding: 10px 20px;
+    box-shadow: 0 0 8px thistle;
+    border:2px solid green; 
+    border-radius: 8px;
+}
+
+#tog{
+    margin-left: 64px;
+}
+#btnval{   
+    margin-left: 86px ;
+}
+#btnreg{
+    margin-top: 10px;
+    margin-left: 84px;
+}
+.txtbox{
+    background-color: greenyellow;
+    padding: 5px;
+    border:1px solid green;
+    border-radius: 7px;
+  
+}
+.btns{
+    box-shadow: 0 0 8px black;
+    border-radius: 6px;
+    font-weight:bold;
+    color:black;
+    margin-bottom: 10px;
+    background-color: rgba(19, 236, 19, 0.692);
+    padding: 4px;
+}
+
+
+.btns:hover{
+    background-color: greenyellow;
+    box-shadow: rgba(3, 107, 26, 0.747);
+
+}

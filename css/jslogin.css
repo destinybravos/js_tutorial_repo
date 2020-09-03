@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#loginCont{
+    margin: 30vh auto;
+    max-width: 360px;
+    box-shadow: 0 0 1px #000000;
+    padding: 10px;
+}
+
+.form-group{
+    margin: 20px auto;
+}
+
+.txtbox{
+    display: block;
+    height: 2rem;
+    margin: 2px auto;
+    padding: 0 10px;
+    width: 90%;
+    border: none;
+    box-shadow: 0 0 2px #2164e0dc;
+}
+#password_toggler{
+    float: right;
+    padding: 4px 8px;
+}
+/* Targetting by Attribute */
+button[type=submit]{
+    padding: 6px 15px;
+}

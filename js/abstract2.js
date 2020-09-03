@@ -20,6 +20,7 @@
 // console.log(persons[1].phone);
 
 // ACTUAL ABSTRACT 2 CODING STARTS HERE //
+
 function openModal(modalId) {
     let modal = document.getElementById(modalId);  //Our modal is the hover div
     modal.style.display = 'block';
@@ -104,3 +105,9 @@ function populateUserDetails(index) {
     document.getElementById('span_phone').innerText = selectedPerson.phone;
     // console.log(selectedPerson);
 }
+function save(){
+    let save = document.getElementByClassName(txtBoxes);
+    save = "";
+    let person = document.getElementById(name_list).innerHTML;
+    person = ""
+    }

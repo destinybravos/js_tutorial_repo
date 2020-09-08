@@ -17,11 +17,10 @@
             <div id="flex-child1">
                 <!-- Create a dummy list -->
                 <ul id="name_list">
-                    <li>ssddffs</li>
-                    <li>ssddffs</li>
-                    <li>ssddffs</li>
                 </ul>
             </div>
+            
+        </di>
             <div id="flex-child2">
                 <div id="name_details">
                     <div class="feild">
@@ -36,12 +35,12 @@
                     
                     <div class="feild">
                         <label><strong>Phone Number:</strong></label>
-                        <span id="phone"></span>
+                        <span id="span_phone"></span>
                     </div>
                     
                     <div class="feild">
                         <label><strong>Email:</strong></label>
-                        <span id="email"></span>
+                        <span id="span_email"></span>
                     </div>
                 </div>
             </div>
@@ -60,10 +59,10 @@
                 Enter Person's Data
             </h3>
             <hr>
-            <form method="post">
+            <form method="post" name="frmAddUser">
                 <div class="feild">
                     <label><strong>Firstname:</strong></label>
-                    <input type="text" id="fname" name="fname" class="txtBoxes">
+                    <input type="text" id="fname" name="fname" class="txtBoxes" required>
                 </div>
                 
                 <div class="feild">
@@ -73,16 +72,16 @@
                 
                 <div class="feild">
                     <label><strong>Phone Number:</strong></label>
-                    <input type="tel" id="phone" name="phone" class="txtBoxes">
+                    <input type="tel" id="phone" name="phone" class="txtBoxes" required>
                 </div>
                 
                 <div class="feild">
                     <label><strong>Email:</strong></label>
-                    <input type="email" id="email" name="email" class="txtBoxes">
+                    <input type="email" id="email" name="email" class="txtBoxes" required>
                 </div>
                 
                 <div class="feild">
-                    <button type="button" id="btnSave" class="btn-green" style="float: right;">
+                    <button type="submit" id="btnSave" class="btn-green" style="float: right;">
                         Save Details
                     </button>
                     <div style="clear: both;"></div>

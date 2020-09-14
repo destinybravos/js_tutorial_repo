@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    width: 100%;
+    min-height: 50px;
+    background-color: rgb(1, 1, 87);
+    text-align: center;
+}
+header aside{
+    display: inline-block;
+    padding: 15px 10px 10px;
+}
+#logo{
+    font-size: 17px;
+}
+#left{
+  margin-right: 30px;
+  color:white;
+}
+.fa-graduation-cap{
+    background-color: yellow;
+    color: black;
+    transform: rotatez(340deg);
+    margin-right: 5px;
+    padding: 12px 10px;
+    border-radius: 50px;
+    font-size: 12px;
+}
+#center{
+    text-align: center;
+}
+#right{
+    text-align: right;
+    margin-left: 30px;
+}
+header aside a{
+    display:inline-block;
+    font-weight: bold;
+    text-decoration: none;
+}
+aside a{
+    padding: 6px 10px;
+    color: white;
+    font-size: 12px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+aside a:hover{
+    color: lime;
+    
+}
+#right a{
+    background-color: lime;
+    color: black;
+    border-radius: 3px;
+}
+#container{
+    background-image: url('../images/house.jpg');
+    background-repeat:no-repeat;
+    background-size: cover; 
+    background-position: center;
+    width: 100%;
+    min-height: 300px;
+    text-align: center;
+}
+#sub_b{
+    width: 100%;
+    min-height:inherit;
+    background-color:rgb(0,0,0,0.6);
+    
+}
+#sign{ 
+    width: 35%;
+    height: auto;
+    color: white;
+    margin-left: auto;
+    margin-right:auto ;
+    padding-top:100px;
+    font-family:-apple-system, BlinkMacSystemFont;
+}
+
+#sign p{
+    padding: 13px;
+    font-size: 15px;
+   
+}
+
+#sign a{
+    text-decoration: none;
+    color: white;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: rgb(1, 1, 87);
+    border-radius: 3px;
+    font-size: 10px;
+}
+
+
+.box .box1{
+    background-color: rgb(1, 1, 87);
+    display: inline-block;
+    text-align: justify;
+    padding: 20px;
+    
+}
+.box1{
+    width: 230px;
+    min-height: 80px;
+    margin-top: 80px;
+    padding: 15px 8px 10px 2px;
+    
+}
+
+.fa-user ,.fa-book{
+    color: lime;
+}
+  span{
+    color: white;
+    padding: 10px;
+   
+}
+.box1 p{
+    padding: 10px;
+    color: white;
+    border: 10px;
+    font-size: 13px;
+   
+}
+#low {
+    text-align: center;
+    padding: 20px;
+    display: block;
+}
+#low p{
+    margin-left: 0;
+    margin-right: 0;
+    padding: 20px;
+    font-size: 14px;
+
+} 
+#img{
+    background-image: url('../images/joe.jpg');
+    background-repeat:no-repeat;
+    background-position: center; 
+    width: auto;
+    min-height: 500px;
+   
+}

@@ -206,6 +206,9 @@
         color: black;
         background-color: rgb(187, 187, 7);
 }
+#upaside3{
+    margin-left: 43px;
+}
 #topnav aside:nth-child(2){
     display: none;
 }
@@ -240,6 +243,9 @@
 
 
 @media screen and (max-width:360px){
+    #upaside1 {
+        padding-left: 10px;
+    }
 
     #topnav aside:nth-child(2){
         display: none;

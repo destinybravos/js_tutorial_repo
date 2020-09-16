@@ -15,7 +15,7 @@
 
 // $('#mydiv').css({
 //     // 'background-color':'red'
-//     backgroundColor:'red',
+//     backgroundColor:'blue',
 //     width:'300px',
 //     color:'white',
 //     height: '400px'

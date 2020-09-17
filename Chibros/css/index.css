@@ -1,0 +1,133 @@
+*{
+  margin:0;
+  padding:0;
+}
+body{
+background: linear-gradient(red,blue);
+}
+#container{
+ background: skyblue;
+ height:75vh;
+ min-height:470px;
+ width:500px;
+ max-width:100%;
+ margin:auto;
+ margin-top:80px;
+}
+#sh2{
+text-align:center;
+font-family:serif;
+padding:10px;
+color:blue;
+}
+.content{
+ display:block;
+ margin:20px ;
+ padding:5px;
+ box-shadow:0 0 10px blue;
+}
+.content input{
+width:400px;
+}
+.content #convert{
+ margin-left:170px;
+ background: blue;
+ color:red;
+ margin-top:-10px;
+ margin-bottom:5px;
+ width:100px;
+}
+#container .content #currency_pair{
+margin-left:70px;
+}
+.btncontent{
+margin:10px 80px;
+padding:10px;
+box-shadow:0 0 10px blue;
+margin-top:25px;display:block;
+}
+.btncontent #btnAdvanced{
+box-shadow:0 0 10px blue;
+background:skyblue;
+width:100px;
+margin:10px 40px;
+color:green;
+}
+.btncontent #btnClear{
+padding:20px;
+box-shadow:0 0 10px blue;
+background:skyblue;
+width:100px;
+color:red;
+
+}
+/*STYLING FOR ADVANCED CALCULATOR*/
+#adv{
+   display:none;
+   width:400px;
+   max-width:100%;
+   min-height:400px;
+   margin:auto;
+   margin-top:100px;
+   background:skyblue;
+ }
+#adv hr{
+     border:thin solid blue;
+  }
+ #adv h2{
+   font-size:1.5em;
+   font-family:serif;
+   text-align:center;
+   margin:5px;
+   padding:10px;
+   color:white;
+   
+ }
+#adv .Scontainer{
+ display:flex;
+ margin:50px 30px;
+ box-shadow:0 0 10px blue;
+}
+#adv .Scontainer select{
+padding:3px;
+margin:0px -5px;
+}
+#adv .Scontainer input{
+padding:5px;
+border: none;
+}
+#adv .Scontainer #firsti{
+margin-right:10px;
+
+}
+#adv .Scontainer #secondi{
+margin-right:10px;
+}
+#adv .Scontainer .Scontent{
+padding:10px;
+}
+#adv .acontainer{
+margin:5px 50px;
+box-shadow:0 0 5px blue;
+padding:5px;
+display:flex;
+flex:1;
+margin-right:55px;
+}
+#adv .acontainer #btns{
+ padding:10px;
+ width:100px;
+ background:skyblue;
+ color:white;
+ font-size:10px;
+ margin-left:20px;
+ margin-right:40px;
+}
+#adv .acontainer #btnAclear{
+  padding:10px;
+  width:100px;
+  background:skyblue;
+  color:white;
+  font-size:10px;
+  margin-left:;
+}

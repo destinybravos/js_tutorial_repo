@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration with jQuery</title>
+    <link rel="stylesheet" href="css/reg.css">
+</head>
+<body>
+
+    <!-- <input type="text" id="myinput">
+
+    <div id="mydiv">
+
+    </div> -->
+
+    <div id="form-container">
+        <form method="post" id="myform">
+            <div class="form-group">
+                <label for="fname">Fullname</label>
+                <input type="text" name="fname" id="fname" class="input-box">
+                <span class="errorSpan" id="spanfname"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required class="input-box">
+            </div>
+            <div class="form-group">
+                <label for="uname">Username</label>
+                <input type="text" name="uname" id="uname" class="input-box">
+            </div>
+            <div class="form-group" id="ididi">
+                <label for="pass">Password</label>
+                <input type="password" name="pass" required id="pass" class="input-box">
+
+            </div>
+            <div class="form-group">
+                <label for="cpass">Confirm Password</label>
+                <input type="password" name="cpass" id="cpass" class="input-box">
+            </div>
+            <div class="form-group">
+                <button type="submit">
+                    Register
+                </button>
+            </div>
+        </form>
+    </div>
+
+
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/reg.js"></script>
+</body>
+</html>

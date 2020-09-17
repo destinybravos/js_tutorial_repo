@@ -1,0 +1,48 @@
+*{
+    padding:0px;
+    margin:0px;
+ }
+            
+#form{
+      text-align:center;
+       padding-top:2em;
+       background:skyblue;     
+                                           
+     }
+ #form-header{
+               margin-bottom:0.5em;
+               color:darkgreen;
+               font-size:5em;
+             }
+#form input[type="text"]{
+                      padding:50px 50px;
+                      width: 700px;background:white;                  
+                    }
+#form input{
+           text-align:center;
+           font-family:serif;
+           font-size:2em;                                   
+           border:thick solid grey;
+                                              
+         }
+#form i{
+          padding-left:4rem;
+          position: absolute;
+          color: green;
+          padding-top:1em;
+          font-size:3em;
+          opacity:0.7;
+       }
+#sbmt{
+      background:darkgreen;
+      color:white;
+      margin:2em;
+      border-color:lightblue;
+      padding:5px 50px;
+      opacity:0.8;
+    }
+ hr{                             
+      
+      border:thick solid white;
+      margin:25px 230px;
+   }

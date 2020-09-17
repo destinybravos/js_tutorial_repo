@@ -1,0 +1,210 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    background:url("../images/wpblack1.jpg");
+}
+#container{
+    margin: auto;
+    
+}
+#content1{
+   width:41%;
+   margin:20px 0px;
+}
+#content2{
+  background:url("../images/officebg1.jpg");
+  width:41%;
+  height: 200px;
+  padding-top:30px;
+  margin:20px 0px;
+}
+#contnt2-menu-bar{
+    background:lightsteelblue;
+     display:flex;
+     width: 80%;
+     margin:auto;
+     padding:10px;
+     opacity: 0.85;
+}
+#contnt2-menu-bar section:first-child{
+   color:white;
+   flex: 1;
+}
+#contnt2-menu-bar section:last-child{
+    flex: 2;
+ }
+ #contnt2-menu-bar section:last-child ul{
+     list-style: none;
+ }
+ #contnt2-menu-bar section:last-child ul li{
+ display:inline-block;
+ margin:0px 5px;
+ }
+ #contnt2-menu-bar section:last-child ul li a{
+     text-decoration: none;
+     color:white;
+     margin: 5px;
+ }
+ #content3{
+    background:url("../images/officebg3.jpg");
+    width:41%;
+    height: 200px;
+    margin-bottom:20px;
+  }
+  #contnt3-menu-bar{
+      background:lightsteelblue;
+       display:flex; 
+       padding:10px;
+       opacity: 0.85;
+  }
+  #cntn3-mb-container{
+  width: 80%;
+  margin:auto;
+  display:inline-flex;
+  }
+  #contnt3-menu-bar section:first-child{
+     color:white;
+     flex: 1;
+  }
+  #contnt3-menu-bar section:last-child{
+      flex: 2;
+   }
+   #contnt3-menu-bar section:last-child ul{
+       list-style: none;
+   }
+   #contnt3-menu-bar section:last-child ul li{
+   display:inline-block;
+   }
+   #contnt3-menu-bar section:last-child ul li a{
+       text-decoration: none;
+       color:white;
+       margin: 5px;
+   }
+   #content3 footer{
+    margin-top:8rem;
+    text-align:center;
+   }
+   #content3 footer i{
+    color:white;
+    margin-right:10px;
+}
+#content3 footer i a{
+    text-decoration:none;
+    color:white;
+    margin-left:10px;
+}
+#content3 footer hr{
+    width:70%;
+    margin:auto;
+}
+#content4{
+    background:url('../images/officebg4.jpg');
+    width:41%;
+    height: 200px;
+}
+#container2{
+    flex:1;
+}
+#cntn4-mb-container{
+    border:thin solid black;
+    width:20%;
+    margin-top:10px;
+    margin-left:35%;
+    padding:10px;
+    display:inline-block;
+
+}
+#content4 footer{
+    margin-top:7rem;
+    text-align:center;
+   }
+   #content4 footer i{
+    color:white;
+    margin-right:10px;
+}
+#content4 footer i a{
+    text-decoration:none;
+    color:white;
+    margin-left:10px;
+}
+#content4 footer hr{
+    width:70%;
+    margin:auto;
+}
+#c2-content1{
+    background:url("../images/fancybg2.jpg");
+    width:41%;
+    height: 200px;
+    margin-top:20px;
+}
+#ctn1-menu-bar{
+    display:flex;
+     background:lightsteelblue;
+     padding:10px;
+}
+
+#ctn1-menu-bar section:nth-child(1){
+   flex:1;
+   font-size:10px;
+}
+#ctn1-menu-bar section:nth-child(1) ul{
+    list-style:none;
+    display:inline-flex;
+}
+#ctn1-menu-bar section:nth-child(1) ul li{
+    margin-right:5px;
+}
+#ctn1-menu-bar section:nth-child(1) ul li a{
+    text-decoration:none ;
+    margin-right:5px;
+}
+#ctn1-menu-bar section:nth-child(2){
+flex:1;
+margin-top:10px;
+}
+#ctn1-menu-bar section:nth-child(2) p{
+    border: thin solid black;
+    text-align:center;
+    padding:5px;
+    }
+#ctn1-menu-bar section:nth-child(3){
+    display:inline-flex;
+    flex:2;  
+}
+#ctn1-menu-bar section:nth-child(3) p{
+    margin:0px 10px;
+    font-size:13px;
+}
+#ctn1-menu-bar section:nth-child(3) i{
+    margin-right:8px;
+}
+#c2-content2{
+    background:white;
+    width:41%;
+    height: 200px;
+    padding-top:10px;
+}
+#c2-menu-bar{
+    background:black;
+}
+#c2-menu-bar section:nth-child(1){
+    width:70%;
+    margin:auto;   
+}
+#c2-menu-bar section:nth-child(1) ul{
+    list-style: none;
+    display:inline-flex;
+}
+#c2-menu-bar section:nth-child(1) ul li{
+    padding:10px;
+    color:white;
+}
+#c2-menu-bar section:nth-child(1) ul li a{
+   text-decoration:none;
+   color:white;
+   margin-right:10px;
+}
+
+

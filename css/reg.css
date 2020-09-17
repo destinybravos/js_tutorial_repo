@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#form-container{
+    max-width: 400px;
+    margin: 10vh auto;
+    background-color: rgba(255, 127, 80, 0.438);
+    padding: 20px;
+}
+.form-group{
+    margin: 20px auto;
+}
+.input-box{
+    display: block;
+    padding: 10.1px;
+    width: 90%;
+}
+button[type=submit]{
+    background-color: cornflowerblue;
+    padding: 5px 15px;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.errorSpan{
+    color: red;
+    font-size: 0.9rem;
+}

@@ -18,7 +18,7 @@ form{
     min-height: 300px;
     margin: 20vh auto;
     padding: 10px 20px;
-    box-shadow:0 0 8px rgb(243, 131, 243);
+    box-shadow: 0 0 8px thistle;
     border:2px solid green; 
     border-radius: 8px;
 }

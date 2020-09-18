@@ -17,10 +17,10 @@ function greetPersonAgain(person){
     return greeting;
 }
 // calling functions
-// greet();
-// greet_person("LisaIxora");
-// console.log(greetAgain() + 'LisaIxora');
-// console.log(greetPersonAgain('LisaIxora'));
+greet();
+greet_person("LisaIxora");
+console.log(greetAgain() + 'LisaIxora');
+console.log(greetPersonAgain('LisaIxora'));
 
 // ||||||||||| CURENCY CONVERTER
 
@@ -92,7 +92,7 @@ function convert() {
             alert('The Naira Value is empty! Please enter naira value.');
         }else{
             dol = convert2dollar(nar);
-            document.getElementById('dInput').value = dol;
+            document.getElementById('dInput').value = dol;//print the dollar to the dollar input.
         }
     }else if(task === 'd2n'){
         // Dollar to Naira Conversion
@@ -157,5 +157,49 @@ document.getElementById('btnAdvanced').addEventListener('click', function(){
  document.getElementById('')
 
 
+<<<<<<< HEAD
 
  
+=======
+document.getElementById('sInputA').addEventListener('keyup', function () {
+    let Fvalue = aFS.value;
+    let Svalue = aSS.value;
+    let Amount = this.value;
+    aFi.value = A_Convert(Amount, Svalue, Fvalue);
+});
+
+document.getElementById('sselect').addEventListener('change', () => {
+    let Fvalue = aFS.value;
+    let Svalue = aSS.value;
+    let Amount = aSi.value;
+    aFi.value = A_Convert(Amount, Svalue, Fvalue);
+});
+
+
+// Advanced Converting function
+function A_Convert(theAmount, value1, value2) {
+    let covertedAmount;
+
+    if(value1 === value2){
+        covertedAmount = theAmount;
+    }else if(value1 === 'nValue' && value2 === 'dValue'){
+        covertedAmount = convert2dollar(theAmount);
+    }else if(value1 === 'dValue' && value2 === 'nValue'){
+        covertedAmount = convert2Naira(theAmount);
+    }else if(value1 === 'nValue' && value2 === 'eValue'){
+        covertedAmount = convertNaira2Euro(theAmount);
+    }else if(value1 === 'eValue' && value2 === 'nValue'){
+        covertedAmount = convertEuro2Naira(theAmount);
+    }else if(value1 === 'dValue' && value2 === 'eValue'){
+        covertedAmount = convertDollar2Euro(theAmount);
+    }else if(value1 === 'eValue' && value2 === 'dValue'){
+        covertedAmount = convertEuro2Dollar(theAmount);
+    }
+
+    return covertedAmount;
+}
+
+document.readyState( ()=> {
+    alert('Alert Me')
+})
+>>>>>>> 76e1a0c9a32a63ffb8b3cba0a203413236ddf351

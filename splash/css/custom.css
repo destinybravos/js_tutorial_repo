@@ -1,0 +1,154 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#tophd{
+    background-color: #0a2045;
+    min-height: 50px;
+    width: auto;
+    display: flex;
+}
+#logo span a{
+    display: inline-block;
+    background-color: #eec44b;
+    padding:7px  5px;
+    border-radius: 100%;
+    text-decoration: none;
+    color: black;
+}
+#logo{
+    color: white;
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin-right: 50px;
+}
+#secmenu{
+    margin: 20px 60px;
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+}
+#menu li{
+    list-style-type: none;
+    display: inline-block;
+}
+#menu li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+}
+.active{
+    color: #eec44b !important;
+}
+#menu li:first-child a{
+    color: black;
+}
+#menu li:last-child{
+    background-color: #eec44b;
+    margin-left: 50px;
+}
+#menu li:last-child a{
+    color: black;
+    padding: 6px;
+    display: inline-block;
+}
+#toggleBtn{
+    display: none;
+}
+
+@media screen and (max-width:767px){
+    #logo{
+        display: none;
+    }
+    #menu li{
+        display: block;
+    }    
+    #toggleBtn{
+        display: block;
+        float: right;
+        margin: 6px 20px;
+        padding: 3px 10px;
+        background-color: transparent;
+        border: 0.15rem solid white;
+        color: white;
+        border-radius: 5px;
+    }
+    #menu li a{
+        display: none;
+    }
+}
+#bgimage{
+    background-image: url('../images/highschool2.jpg');
+    min-height: 40px;
+    background-size: cover;
+}
+#transDiv{
+    width: 100%;
+    padding: 100px 0 0 0 !important;
+    min-height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin: 0;
+}
+#lttr{
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    text-shadow: 0 0 3px #000000;
+}
+#lorem{
+    color: white;
+    text-align: center;
+    text-shadow: 0 0 3px #000000;
+    font-size: 0.7rem;
+    margin: 12px;
+}
+#btn{
+    background-color: #0a2045;
+    padding: 10px 8px;
+    display: block;
+    margin: auto;
+    border: none;
+    margin-top: 30px;
+    font-size: 0.5rem;
+    color: white;
+    border-radius: 15px 5px;
+    font-weight: bold;
+}
+#sides_ban{ 
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    display: flex;
+    max-width: 800px;
+    margin:100px auto auto;
+}
+.side_Div{
+    display: inline-block;
+    background-color: #0a2045;
+    color: white;
+    margin: auto;
+    padding: 15px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    flex: 1;
+    text-align: left;
+    font-size: 1.3rem;
+}
+.side_Div:not(:last-child){
+    border-right:thin solid white;
+}
+#wel{
+    text-align: center;
+    font-size: 1.6rem;
+    margin-top: 50px;
+}
+#img {
+    text-align: center;
+    margin-top: 60px;
+    max-height: 250px;
+    overflow: hidden;
+}
+
+

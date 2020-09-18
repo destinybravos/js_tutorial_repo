@@ -1,0 +1,172 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+#fullpg{border-radius: 0.2rem;
+   color: cornflowerblue;
+    width: 100%;
+    height: 100vh;
+    border: 1px solid springgreen;
+    box-sizing: border-box;
+    background-image: url(pic1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#topnav{
+    width: 100%;
+    height:70px;
+    background-color: rgba(0, 0,0,0.3); 
+    display: flex;
+    box-sizing: border-box;
+   }
+#topnav aside:first-child{
+    margin: 5px;
+    flex: 1;
+}
+
+#topnav aside:last-child{
+    margin: 5px;
+    flex: 4;
+}
+#topnav aside:first-child h3{
+    padding: 10px 5px;
+    color:#4569e4;
+    font-weight: bold;
+    display: inline-block;
+    margin:10px 5px 15px 0;
+}
+#topnav aside:last-child ul li{
+    display: inline-block;
+    list-style-type: none;
+    padding: 10px 20px;
+}
+#topnav aside:last-child ul{
+    float: right;
+}
+#topnav aside:last-child a{
+    text-decoration: none;
+    color:whitesmoke;
+    display: inline-block;
+    padding: 10px;
+}
+#topnav aside:last-child a.active{
+    background-color: palevioletred;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px palevioletred;
+}
+#topnav aside h3 span{
+    color: #f1f;
+}
+#btnexpnd :hover{
+    cursor: pointer;
+    opacity: 0.7;
+    }
+    
+    #btnexpnd{
+        border-radius: 5px;
+        border: 1px solid #4569e4;
+        background-color: #6659c3;
+        box-shadow: 1px 1px 1px  #4569e4;
+        color: #e0286b;
+        display: none;
+        float: right;
+        align-self:center;
+        padding:10px 5px;
+        margin-right: 20px;
+    }
+
+#banner{
+text-align: center;
+width: 100%;
+height: 58px;
+margin-top: 20px;
+}
+#fullpg #banner h3 {margin: 50px;
+    padding: 10px;
+    border-bottom: 1px solid #f1f;
+    color: #f1f1f1;
+    font-weight: bolder;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.cards{height: auto;
+    margin-top: 70px;
+    align-content: center;
+    display: flex;
+    padding: 2px;
+    background-color:  rgba(120, 137, 233, 0.315);
+    
+   
+}
+.cards section{margin: 1px 2px;
+   border: 1px solid #4569e4; 
+   border-radius: 7.5px;
+   box-shadow:1px 1px 1px royalblue;
+   text-align: center;
+    flex: 1;
+    height: 400px;
+}
+    
+#btn {background-color: rgb(209, 12, 104);
+    color:royalblue;
+    border-radius: 7px;
+    width: 100px;
+    padding: 8px;
+    border: 1px solid  #f1f;
+    margin-top: 23px;
+    
+}
+
+.cards section  h3{
+    color: rgb(209, 12, 104);
+    margin-bottom: 10px;
+    margin-top: 15px;
+    }
+.cards section  p{
+        color: rgb(223, 215, 218);
+        margin-top: 20px;
+        }
+        .cards3{
+            margin-top: 40px;
+        }
+
+
+#test{  width: 150px;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 20px;
+    background-color:rgb(20, 19, 20);
+    border: none;
+    text-transform: capitalize;
+    font-weight: bold;
+    box-shadow: 1px 1px 1px #f1f;
+
+}
+
+
+
+
+
+
+
+@media screen and (max-width:768px){
+    #topnav aside:last-child{
+        display: none;
+    }
+    .cards{
+    display: block;
+    }
+  
+    
+#btnexpnd{
+    display: inline-block;   
+         }
+}
+
+/*this should style my form*/
+form{
+    
+}

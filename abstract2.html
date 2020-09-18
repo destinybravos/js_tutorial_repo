@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practicing Object/Arrays</title>
+    <link rel="stylesheet" href="css/abstract2.css">
+</head>
+<body>
+    
+    <div id="app_container">
+        <button id="btnPopUp" class="btn-green" onclick="openModal('hover')">
+            Add New Record
+        </button>
+
+        <div id="flexbox">
+            <div id="flex-child1">
+                <!-- Create a dummy list -->
+                <ul id="name_list">
+                </ul>
+            </div>
+            
+        </di>
+            <div id="flex-child2">
+                <div id="name_details">
+                    <div class="feild">
+                        <label><strong>Firstname:</strong></label>
+                        <span id="firstname"></span>
+                    </div>
+                    
+                    <div class="feild">
+                        <label><strong>Lastname:</strong></label>
+                        <span id="lastname"></span>
+                    </div>
+                    
+                    <div class="feild">
+                        <label><strong>Phone Number:</strong></label>
+                        <span id="span_phone"></span>
+                    </div>
+                    
+                    <div class="feild">
+                        <label><strong>Email:</strong></label>
+                        <span id="span_email"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Hover Modal -->
+    <div id="hover">
+        <div id="popUp">
+            <!-- Content of the Pop-Up -->
+            <h3>
+                <button id="closeBtn" onclick="closeModal('hover')">
+                    X
+                </button>
+                Enter Person's Data
+            </h3>
+            <hr>
+            <form method="post" name="frmAddUser">
+                <div class="feild">
+                    <label><strong>Firstname:</strong></label>
+                    <input type="text" id="fname" name="fname" class="txtBoxes" required>
+                </div>
+                
+                <div class="feild">
+                    <label><strong>Lastname:</strong></label>
+                    <input type="text" id="lname" name="lname" class="txtBoxes">
+                </div>
+                
+                <div class="feild">
+                    <label><strong>Phone Number:</strong></label>
+                    <input type="tel" id="phone" name="phone" class="txtBoxes" required>
+                </div>
+                
+                <div class="feild">
+                    <label><strong>Email:</strong></label>
+                    <input type="email" id="email" name="email" class="txtBoxes" required>
+                </div>
+                
+                <div class="feild">
+                    <button type="submit" id="btnSave" class="btn-green" style="float: right;">
+                        Save Details
+                    </button>
+                    <div style="clear: both;"></div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/abstract2.js"></script>
+</body>
+</html>

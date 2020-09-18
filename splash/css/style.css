@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#tophd{
+    background-color: white;
+    min-height: 50px;
+    width: auto;
+    display: flex;
+}
+#logo{
+    height: 20px;
+    width: 20px;
+} 
+#sec1{
+    margin: 20px 60px;
+}
+#secmenu{
+    margin: 20px 60px;
+    margin-left: auto;
+}
+#menu li{
+    list-style-type: none;
+    display: inline-block;
+}
+#menu li a{
+    text-decoration: none;
+    color: rgb(6, 6, 15);
+    font-weight: bold;
+    font-size: 0.3rem;
+    font-size: small;
+    padding: 5px 10px;
+    text-align: right;
+    
+}
+#menu li:last-child{
+    background-color: #ed594d;
+}
+#menu li:last-child a{
+    color: white;
+    padding: 6px;
+    display: inline-block;
+}
+
+#bgimage{
+    width: auto;
+    padding: 100px 0;
+    background-image: url('../images/man3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#bgimage > aside{
+    color: #ed594d;
+    font-size: 0.2rem;
+}
+#bgimage section{
+    margin: 50px auto;
+    max-width: 900px;
+}
+#bgimage section > aside{
+    font-size: small;
+    color: #ed594d;
+    text-shadow: 0 0 0.7px rgb(97, 10, 10);
+}
+#bgimage section div aside{
+    color: rgb(5, 5, 58);
+    font-size: 50px;
+}
+#btn{
+    display: inline-block;
+    margin-top: 40px;
+}
+#btn1{
+    background-color: #f33b2a;
+    padding: 13px 33px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+#btn2{
+    padding: 13px 33px;
+    border-radius: 5px;
+    border: none;
+    background-color: transparent;
+    box-shadow: 0 0 2px rgb(97, 10, 10);
+    margin: 0 10px;
+}
+#ftwrtup{
+    display: flex;
+    margin:50px auto;
+    max-width: 900px;
+    font-weight: bold;
+}
+#ftwrtup p{
+    display: inline-block;
+    flex: 1;
+}

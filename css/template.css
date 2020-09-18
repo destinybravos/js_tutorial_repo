@@ -77,10 +77,6 @@
     color: white;
 }
 
-#banner{
-    min-height: 2000px;
-    background-color: rgba(219, 213, 211, 0.336);
-}
 #nav_toggler{
     display: none;
 }
@@ -115,4 +111,15 @@
         display: block !important;
     }
 
+}
+
+/* Single Page Website Styles */
+#page_title{
+    padding: 40px;
+    background-color: rgb(245, 243, 243);
+    font-size: 1.5rem;
+    box-shadow: 0 0 1px #000000;
+}
+#page_details{
+    padding: 30px 20px;
 }

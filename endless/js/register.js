@@ -55,7 +55,7 @@ function validateEmail() {
     }else{
         document.getElementById('email_incorrect').style.display='block';
     }
- 
+        document.getElementById('email_incorrect').style.display='none';
 }
 
 ///....username.....validation

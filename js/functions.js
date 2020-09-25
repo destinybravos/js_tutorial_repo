@@ -156,11 +156,6 @@ document.getElementById('btnAdvanced').addEventListener('click', function(){
  var secondSelect = document.getElementById('aCurrency_pair2');
  document.getElementById('')
 
-
-<<<<<<< HEAD
-
- 
-=======
 document.getElementById('sInputA').addEventListener('keyup', function () {
     let Fvalue = aFS.value;
     let Svalue = aSS.value;
@@ -202,4 +197,3 @@ function A_Convert(theAmount, value1, value2) {
 document.readyState( ()=> {
     alert('Alert Me')
 })
->>>>>>> 76e1a0c9a32a63ffb8b3cba0a203413236ddf351

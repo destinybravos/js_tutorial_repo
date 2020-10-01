@@ -15,4 +15,8 @@ $('#menu a').click(function () {
     $.get('pages/' + $page, function (response) {
         $('#pages').html(response);
     });
-})
+});
+
+// $('#pages').on('click', '#btn_load_user', function(){
+//     alert('Hello')
+// });

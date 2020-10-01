@@ -1,0 +1,40 @@
+<div id="services">
+    <div id="page_title">
+        <strong>
+            <i class="fa fa-users fa-1x"></i>
+            Site User
+        </strong>
+    </div>
+
+    <div id="page_details">
+        <h2>This is a list of our users</h2>
+        <button id="btn_load_user">
+            LOAD USER
+        </button>
+
+        <hr>
+
+        <!-- Users Table -->
+
+        
+    </div>
+</div>
+
+<script>
+
+    // General Syntax
+    // $.get(url, function);
+    // $.post(url, data, function);
+    // $.ajax();
+
+
+    $('#btn_load_user').on('click', function () {
+
+        $.post('http://localhost/api/', {'crit':'all', '_token':'asd123qwe456zxc'}, function (response) {
+            console.log(response);
+        });
+
+
+        
+    })
+</script>

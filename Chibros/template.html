@@ -1,0 +1,405 @@
+<!Doctype html>
+<html>
+  <head>
+     <title>template</title>
+     <link rel="stylesheet"href="../fa/css/all.css">
+     <meta name="viewport"content="width=device-width initial-scale=1.0">
+     <style type="text/css">
+        *{
+          margin:0px;
+          padding:0px;
+        }
+      
+        #menu-bar{
+        Background:darkblue;
+        padding:10px 0px;        
+        }
+        #container{     
+        display:flex;
+        max-width:1024px;
+        font-size:20px;
+        margin:auto;
+        }
+      
+        #menu-bar section:nth-child(1){
+         flex:1;
+        }
+        #menu-bar section:nth-child(1) aside{
+        display:inline-flex;
+        }
+        #menu-bar section:nth-child(1) aside span:first-child{
+        display:inline-flex;
+        }
+        #menu-bar section:nth-child(1) aside span:first-child i{
+        margin-right:10px;
+        padding-right:5px;
+        background:gold;
+        padding:5px;
+        border-radius:10px;
+        }
+       #menu-bar section:nth-child(1) aside span:last-child i{
+          background:gold;
+          padding:5px;
+          border-radius:3px;
+          display:none;
+          margin-left:150px;
+        }
+        #menu-bar section:nth-child(1) aside span{
+         color:white;
+         margin:5px;
+     
+        }
+        #menu-bar section:nth-child(2){
+         flex:1;
+        }
+        #menu-bar section:nth-child(2) ul{
+         list-style: none;
+         margin:5px;
+         display:inline-flex;
+         margin-right:20px;
+        }
+        #menu-bar section:nth-child(2) ul li{
+          margin-right:25px;
+        }
+        #menu-bar section:nth-child(2) ul li a{
+           text-decoration:none; 
+           color:white;
+           font-size:15px;
+           padding:7px;
+        }
+        #menu-bar section:nth-child(2) ul li a:hover{
+        color: gold;
+        }
+        #menu-bar section:nth-child(3){
+        background:gold;
+        font-size:10px;
+        width:6rem;  
+        height:1em;  
+        text-align:center;           
+        padding:10px;    
+        }
+        #menu-bar section:nth-child(3) a{
+         text-decoration:none;
+        
+        }
+        #menu-bar section:nth-child(3) a:hover{
+        color:green;
+        }
+        #list{
+           margin-left:20px;
+           margin-top:4.5px;
+           color:white;
+           padding:3px 5px;
+           background:black;
+           display:none;
+           height:1rem;
+        }
+        
+        /*---menu-bar responsiveness--*/
+        
+        @media screen and (max-width:768px){
+            #menu-bar #container{
+            display:block;
+           }
+            #learn{
+              margin-top:30px !important;
+            }                
+           footer aside:nth-child(2){
+           width:50% !important;
+           }          
+        }
+        @media screen and (max-width:368px){
+              #menu-bar section:nth-child(2) ul{
+              display:none;
+            }
+            #menu-bar #container{
+              display:inline-flex;                     
+            }          
+            #menu-bar #container #list{          
+              display:block;                      
+            } 
+           
+            #banner{              
+              background-position: center !important;
+              height:300px;
+            } 
+            #banner section:first-child h1{
+              font-size:20px !important;
+            }      
+            #banner section:first-child p{
+              font-size:12px;
+            }   
+            #left{
+              margin-left:10px !important;
+            }  
+            #right{
+              margin-right:10px !important;
+            } 
+            #learn{
+              margin-top:30px !important;
+            }   
+            #banner_footer{
+              display:block !important;
+              width:100% !important;
+            }
+            footer{
+              margin-top:500px !important;
+              height:376px ! important;
+            }
+            #ffooter{
+              margin-top:-80px;
+            }
+            #sfooter{
+              margin-top:10px;
+            }
+            #tfooter{
+              margin-top:10px;
+            }
+            footer aside:nth-child(2){
+              background-position:center !important;
+              width:70% !important;
+              height:8rem !important;
+              margin-top:-2px !important;
+            }
+        }
+        #banner{
+         background:url(images1/humanbg2.jpg);
+         background-position:center;
+         background-size:cover;
+        }
+        #banner section:first-child{
+          text-align:center;
+          color:white;
+          padding-top:10vh;
+          padding-bottom:50px;
+        }
+        #banner section:first-child h1{
+        margin:20px;
+        font-size:35px;
+        }
+        
+       #left{
+         float:left;
+         margin:30px;
+         background:black;
+         border-radius:10px;
+         padding:10px;
+        }
+        #right{
+          float:right;
+          margin:30px;
+          background:black;
+          border-radius:10px;
+          padding:10px;
+        }
+        #learn{         
+           width:50%;
+           margin:auto;
+           text-align:center;
+        }
+        #learn a{
+          background:blue;
+          text-decoration:none;
+          color:white; 
+          padding:10px;
+        }
+         #banner_footer{
+         display:flex;
+         margin:auto;
+         margin-top:120px;
+         width:90%; 
+        }
+
+       
+        #ffooter{
+         background-image:url(images1/darkboat2.jpg);
+         background-size:cover;
+         background-position:center;
+         background-repeat:no-repeat;
+         display:flex;
+         flex:1;
+         color:white;
+         margin-right:5px;
+         text-align:center;
+         height:100px;
+         padding:20px 5px;
+        }
+        #fagcap{
+         color:gold;
+        }
+        #sfooter{
+        background-image:url(images1/darkboat1.jpg);
+        background-size:cover;
+        background-position:center;
+        background-repeat:no-repeat;
+        display:flex;
+        flex:1;
+        color:white;
+        margin-right:5px;
+        text-align:center;
+        height:100px;
+         padding:20px 5px;
+        }
+        #fausr{
+        color:gold;
+        }
+        #tfooter{
+        background-image:url(images1/darkboat3.jpg);
+        background-size:cover;
+        background-position:center;
+        background-repeat:no-repeat;
+        display:flex;
+        flex:1;
+        color:white;
+        text-align:center;
+        height:100px;
+        margin-right:5px;
+        padding:20px 5px;
+        }
+        #fakey{
+        color:gold;
+        }
+        footer{
+          text-align:center;
+          height:393px;
+          box-shadow:0 0 10px grey;
+          background:white;
+        }
+        footer aside:nth-child(1){
+          width:70%;
+          padding:20px;
+          margin:auto;
+          padding-top:40px;
+        }
+        footer aside:nth-child(1) h1{
+          margin-bottom:20px;
+          font-size:40px;
+        }
+        footer aside:nth-child(2){
+         height:210px;
+         background:url(images1/legendhuman1.jpg);
+         background-repeat:no-repeat;
+         background-size:cover;
+         width:35%;
+         margin:auto;
+         margin-top:20px;
+         border-top-left-radius:200px;
+         border-top-right-radius:200px;
+         box-shadow:-1px -3px 10px darkred ;
+        }
+        footer aside:nth-child(3){
+         background:black;
+         height: 20px;
+         margin-top:20px;
+         color:white;
+        }
+    
+     </style>
+  </head>
+  <body>
+     <div id="menu-bar">
+        <div id="container">
+        <section>
+           <aside>
+               <span id="logo-container"> 
+                    <i class="fa fa-graduation-cap"></i>
+                     Accademic
+               </span>
+               <span>
+                   <i id="menu_items_exit"class="fa fa-times"></i>
+               </span>
+           </aside>
+        </section>
+        <section>
+              <ul id="menu_items">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">PAGES</a></li>
+                <li><a href="#">COURSES</a></li>
+                <li><a href="#">RESEARCH</a></li>
+                <li><a href="#">NEWS</a></li>
+                <li><a href="#">GALLERY</a></li>
+                <li><a href="#">CONTACT</a></li>
+              </ul>
+        </section>
+        <section  id="Appnow">
+            <a href="#" >APPLY NOW</a>
+        </section>
+        <span id="list">
+              <i class="fa fa-bars"></i>
+        </span>
+        
+       </div>
+    </div>
+    <div id="banner_container">
+    <div id="banner">
+        <section>
+              <h1>Best Education For Design</h1>
+              <p>This is the best educating websites 
+                 where you can learn how to design<br> your 
+                 websites and web applications.
+              </p>
+              <i id="left"class="fa fa-angle-left"></i>
+              <i id="right"class="fa fa-angle-right"></i>
+        </section>
+            <p id="learn">
+                  <a href="#">Start Learning</a>
+            </p>
+       <section id="banner_footer">
+           <div id="ffooter">
+                <aside>
+                    <h5 style="font-size:19px;margin-bottom:10px;"><strong>Scholarship Facility</strong></h5>
+                    <p>We offer scholarship to those 
+                       who often visit our site.
+                    </p>
+                </aside>
+                <aside>
+                   <i id="fagcap"class="fa fa-graduation-cap"></i>
+                </aside>
+           </div>
+           <div id="sfooter">
+               <aside>
+                    <h5 style="font-size:19px;margin-bottom:10px;"><strong>Scholarship Facility</strong></h5>
+                    <p>We offer scholarship to those 
+                    who often visit our site.
+                    </p>
+               </aside>
+               <aside>
+                    <i id="fausr" class="fa fa-user"></i>
+               </aside>
+           </div>
+           <div id="tfooter">
+                <aside>
+                    <h5 style="font-size:19px;margin-bottom:10px;"><strong>Scholarship Facility</strong></h5>
+                    <p>We offer scholarship to those 
+                    who often visit our site.
+                    </p>
+                </aside>
+                <aside>
+                    <i id="fakey" class="fa fa-key"></i>
+                </aside>
+           </div>
+       </section>
+   </div>
+   <footer>
+       <aside>
+           <h1>Welcome To Academics</h1>
+           <p>
+               Education they said is power 
+               so please come so we can
+               give you the power you have
+               ever dreamed of...
+            </p>
+        </aside>
+        <aside>
+          
+        </aside>
+        <aside>
+           All rights researved &copy 2020.
+        </aside>
+   </footer>
+ </div>
+    <script type="text/javascript" src="template.js">
+       
+    </script>
+  </body>
+</html>

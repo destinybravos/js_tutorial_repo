@@ -45,7 +45,7 @@ btnhide =document.getElementById('btnhide').addEventListener('click',function ()
       changepassword('off');
       
    }else{
-      alert('Password must be 6 characters');
+      alert('Password must be 6 characters')
    }
   
 })
@@ -54,15 +54,17 @@ btnhide =document.getElementById('btnhide').addEventListener('click',function ()
 ///checking for white space
 function ful_name() {
    let data=document.getElementById('fname').value;
-    let fulname = data.indexOf(' ');
-    if (fulname < 2 ) {
-      alert('Enter your firstname and lastname');
+    let fulname = data.indexOf("'' ''");
+    if (fulname >=2 ) {
+      
+      
        console.log(fulname);
       
+    }else{
+      alert('Enter your firstname and lastname');
     }
-
   }
-  document.getElementById('btnreg').addEventListener('click',function () {
+  reg =document.getElementById('btnreg').addEventListener('click',function () {
    ful_name();
    
 })

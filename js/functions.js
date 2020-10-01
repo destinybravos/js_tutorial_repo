@@ -150,25 +150,17 @@ document.getElementById('btnAdvanced').addEventListener('click', function(){
 });
 
 // Decllaring Variables that will hold all input values
-var aFi = document.getElementById('fInputA');
-var aSi = document.getElementById('sInputA');
-var aFS = document.getElementById('fselect');
-var aSS = document.getElementById('sselect');
+ var firstI = document.getElementById('aFi');
+ var secondI = document.getElementById('aSi');
+ var firstSelect = document.getElementById('aCurrency_pair1');
+ var secondSelect = document.getElementById('aCurrency_pair2');
+ document.getElementById('')
 
-document.getElementById('fInputA').addEventListener('keyup', function () {
-    let Fvalue = aFS.value;
-    let Svalue = aSS.value;
-    let Amount = this.value;
-    aSi.value = A_Convert(Amount, Fvalue, Svalue);
-});
 
-document.getElementById('fselect').addEventListener('change', function () {
-    let Fvalue = aFS.value;
-    let Svalue = aSS.value;
-    let Amount = aFi.value;
-    aSi.value = A_Convert(Amount, Fvalue, Svalue);
-});
+<<<<<<< HEAD
 
+ 
+=======
 document.getElementById('sInputA').addEventListener('keyup', function () {
     let Fvalue = aFS.value;
     let Svalue = aSS.value;
@@ -210,3 +202,4 @@ function A_Convert(theAmount, value1, value2) {
 document.readyState( ()=> {
     alert('Alert Me')
 })
+>>>>>>> 76e1a0c9a32a63ffb8b3cba0a203413236ddf351

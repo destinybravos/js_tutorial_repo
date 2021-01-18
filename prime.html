@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Numbers</title>
+</head>
+<body>
+
+    <style>
+        #js_list{
+            margin-left: 0 !important;
+            padding: 0;
+            max-width: 320px;
+        }
+        #js_list li{
+            list-style-type: none;
+            color: white;
+            padding: 5px 15px;
+            margin-left: 0 !important;
+            background-color: black;
+        }
+    </style>
+    
+    <ul style="margin:40px auto;">
+        <li>Item 1: Sugar</li>
+        <li>Item 2: Milk</li>
+        <li>Item 3: Milo</li>
+        <li>Item 4: Bread</li>
+    </ul>
+
+    <input type="text" id="input_item" placeholder="Enter Item">
+    <button id="btnAdd">Add</button>
+
+    <ul style="margin:40px auto;" id="js_list">
+    </ul>
+
+
+    <script>
+        // Get Element from the UI
+        let list = document.getElementById('js_list');
+        let input = document.getElementById('input_item');
+        let btn = document.getElementById('btnAdd');
+
+        // Declaring the Array and other variables
+        let myArr = ['Sugar', 'Milk', 'Milo', 'Bread'];
+        
+        printArray();
+        function printArray() {
+            let list_item = '';
+            // let myObj = {}; //Object
+
+            myArr.forEach(function(element){
+                list_item += `<li> ${element} </li>`;
+            })
+
+            list.innerHTML = list_item;
+        }
+
+        console.log(myArr);
+
+        btn.addEventListener('click', function () {
+            myArr.push(input.value);
+            printArray();
+            input.value = '';
+        });
+
+        input.addEventListener('keypress', function (e) {
+            if(e.keyCode == 13){
+                myArr.push(input.value);
+                printArray();
+                input.value = '';
+            }
+        });
+
+
+
+        
+    </script>
+</body>
+</html>

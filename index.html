@@ -35,6 +35,18 @@
         Tomato
     </button>
 
-    <script src="js/index.js"></script>
+    <script src="http://localhost/js_tutorial_repo/js/jquery.js"></script>
+    <!-- <script src="js/index.js"></script> -->
+
+    <script>
+        $.ajax({
+            type: 'post',
+            url: 'http://localhost/api_demo/session.php',
+            data: {action: 'get_session'},
+            success: function (response) {
+                console.log(JSON.parse(response));
+            }
+        })
+    </script>
 </body>
 </html>

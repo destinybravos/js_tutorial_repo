@@ -17,6 +17,3 @@ $('#menu a').click(function () {
     });
 });
 
-// $('#pages').on('click', '#btn_load_user', function(){
-//     alert('Hello')
-// });

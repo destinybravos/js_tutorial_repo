@@ -1,3 +1,9 @@
+<style>
+    table td, table th{
+        padding: 10px 15px;
+        border: thin solid #444444;
+    }
+</style>
 <div id="services">
     <div id="page_title">
         <strong>
@@ -14,7 +20,26 @@
 
         <hr>
 
+        <!-- User List -->
+        <ul id="user_list">
+        </ul>
+
         <!-- Users Table -->
+
+        <table style="margin-top: 30px;">
+            <thead>
+                <tr>
+                    <th><strong>Fullname</strong></th>
+                    <th><strong>Email</strong></th>
+                    <th><strong>Phone Number</strong></th>
+                </tr>
+            </thead>
+
+            <tbody id="userdata">
+                
+            </tbody>
+        </table>
+        
 
         
     </div>
@@ -25,16 +50,64 @@
     // General Syntax
     // $.get(url, function);
     // $.post(url, data, function);
-    // $.ajax();
+    // $.ajax({type, url, [data], success, error});
+
+    // $(document).ready(function () {
+    //     $.ajax({
+    //         type: 'post',
+    //         url: 'http://localhost/api/',
+    //         data: {'crit':'all', '_token':'asd123qwe456zxc'},
+    //         dataType: 'json',
+    //         success: function (response) {
+    //             displayUserTable(response);
+    //         },
+    //         error:function (){
+    //             console.log('An error Occured');
+    //         }
+    //     });
+    // })
 
 
     $('#btn_load_user').on('click', function () {
+        $.ajax({
+            type: 'post',
+            url: 'http://localhost/api/',
+            data: {'crit':'all', '_token':'asd123qwe456zxc'},
+            dataType: 'json',
+            success: function (response) {
+                displayUserList(response);
+                displayUserTable(response);
+            },
+            error:function (){
+                console.log('An error Occured');
+            }
+        });
+    });
 
-        $.post('http://localhost/api/', {'crit':'all', '_token':'asd123qwe456zxc'}, function (response) {
-            console.log(response);
+
+    function displayUserList(users) {
+        let userslist = '';
+        users.forEach(function (person, index) {
+            // userslist = userslist + '<li>' + person.name + '</li>';
+            userslist = userslist + `<li> ${person.name} </li>`; 
+            console.log(person);
         });
 
-
+        $('#user_list').html(userslist)
         
-    })
+    }
+
+    function displayUserTable(users) {
+        let userslist = '';
+        users.forEach(function (person, index) {
+            userslist = userslist + `<tr>
+                                        <td> ${person.name} </td>
+                                        <td> ${person.email} </td>
+                                        <td> ${person.phone} </td>
+                                    </tr>`; 
+        });
+
+        $('#userdata').html(userslist)
+        
+    }
 </script>
